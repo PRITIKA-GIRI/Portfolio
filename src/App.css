@@ -1,0 +1,13 @@
+body{
+  display: flex;
+  height:100vh;
+  background-color: aqua;
+}
+header{
+background-color: antiquewhite;
+}
+footer{
+  display: flex;
+  background-color: black;
+  color: white;
+}
