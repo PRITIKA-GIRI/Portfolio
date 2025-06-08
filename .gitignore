@@ -23,8 +23,7 @@ build/
 .vscode/
 .idea/
 
-/public/images/admin.jpg
-/public/images/Pritika_Giri_CV.pdf
+
 # Dependency lock files (if you prefer using yarn over npm, ignore the other)
 # Uncomment only if you are not using them for deterministic builds
 # package-lock.json
