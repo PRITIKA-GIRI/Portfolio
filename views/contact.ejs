@@ -1,2 +1,42 @@
 <%- include('partials/header') %>
-<%- include('partials/footer') %>
+    <div class="container contact mt-5 mb-5">
+        <div class="text-center">
+            <h4>Get in Touch</h4>
+            <p>Whether you have a project in mind, a question, or an opportunity to collaborate, I’d be happy to hear
+                from you.</p>
+            <div class="text-start mt-5 mb-5 px-4">
+                <form action="https://formsubmit.co/xaleyarix@gmail.com" method="POST">
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                    <input type="text" id="mname" name="mname" placeholder="Middle Name">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+
+                      <input type="hidden" name="fullname" id="fullname">
+                       <input type="hidden" name="_next" value="http://localhost:3000/contact">
+                    <label for="name">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="user@gmail.com"><br>
+                    <label for="message">Message:</label><br>
+
+                    <textarea id="message" name="message" required></textarea><br>
+
+                    <button type="submit" class="contactButton mt-3">Submit
+                        <img src="/images/send.svg" alt="send svg">
+                    </button>
+
+                </form>
+                <script>
+                    const form = document.querySelector('form');
+                    form.addEventListener('submit', function (e) {
+                        const fname = document.getElementById('fname').value.trim();
+                        const mname = document.getElementById('mname').value.trim();
+                        const lname = document.getElementById('lname').value.trim();
+
+                        const fullName = [fname, mname, lname].filter(Boolean).join(' ');
+                        document.getElementById('fullname').value = fullName;
+                    });
+                </script>
+            </div>
+        </div>
+
+    </div>
+    <%- include('partials/footer') %>

@@ -86,7 +86,7 @@ body {
 }
 
 /* Button */
-.cvBtn {
+.cvBtn,.contactButton,.viewBtn {
   font-weight: 400;
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -98,7 +98,7 @@ body {
   transition: all 0.3s ease;
 }
 
-.cvBtn:hover {
+.cvBtn:hover ,.contactButton:hover,.viewBtn:hover{
   font-weight: 500;
   transform: scale(1.05);
   background-color: #db9327;
@@ -169,13 +169,13 @@ body {
   border-radius: 12px;
   border: 1.5px solid #e6a829;
   color: #e0e0e0;
-  background-color: rgba(255, 255, 255, 0.03); /* subtle background layer */
+  background-color: #ffffff12; /* subtle background layer */
   padding: 40px;
   font-family: 'Montserrat', sans-serif;
   text-align: justify;
   line-height: 1.8;
   font-size: 1rem;
-  box-shadow: 0 0 15px rgba(230, 153, 36, 0.2);
+  box-shadow: 0 0 10px #eea435;
 }
 .card {
   font-family: 'Montserrat', sans-serif;
@@ -183,15 +183,16 @@ body {
   background-color:#ffffff12; /* Soft transparent white */
   color: #f5f5f5 ;
   border-radius: 10px;
-  border: 1px solid #3a3a3a;
-  box-shadow: 0 0 15px rgba(230, 153, 36, 0.1);
+  border: 1px solid #e6a829;
+  box-shadow: 0 0 10px #eea435;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card li{
   margin-bottom: 5px;
+  color:white;
 }
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 0 25px 	#e6a82940;
 }
 .card ul{
@@ -212,4 +213,65 @@ body {
 .card-title {
   color:#e6a829;
 }
+.contact{
+  background-color: #ffffff12;
+  border:1.5px solid #e6a829 ;
+  box-shadow: 0 0 10px #eea435;
+  border-radius: 10px;
+  max-width: 950px;
+  
+}
+.contact h4,.pagetitle{
+   font-family: "Montserrat", cursive;
+   font-weight: bold;
+   letter-spacing: 1.5px;
+   color:#e6a829;
+   margin-top:10px;
+}
+.contact input,.contact label{
+  margin-bottom: 10px;
+}
+.contact label{
+  color:#e6a829;
+}
+.contact input,textarea{
+  border-radius: 8px;
+  background-color: #efeded;
+  padding:3px 3px 3px 3px;
+ 
+}
+.contact textarea{
+  width:450px;
+  height:250px;
+}
+.contactButton img {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  filter: brightness(0) invert(1); /* Makes it appear white */
+}
+@media (max-width: 600px) {
+  .contact textarea {
+    height: 150px;
+    width:150px;
+  }
+}
+.carousel-item img {
+  filter: none;
+  opacity: 1;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 0 5px black);
+  background-color: rgba(53, 52, 52, 0.5);  /* semi-transparent black */
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
 
+.card-body{
+  padding-bottom: 5px;
+}
+.d-block{
+  border-radius: 5px;
+}
