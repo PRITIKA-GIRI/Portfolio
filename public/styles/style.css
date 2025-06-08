@@ -275,3 +275,20 @@ body {
 .d-block{
   border-radius: 5px;
 }
+.navbar {
+  position: sticky; /* or fixed */
+  top: 0;
+  z-index: 1050; /* Bootstrap uses 1000+ for navs */
+}
+
+.navbar-collapse {
+  z-index: 1051; /* higher than rest */
+  position: absolute;
+  top: 50px; /* match your navbar height */
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.95); /* ensure it's visible */
+  border-radius: 0 0 10px 10px;
+}
+
+

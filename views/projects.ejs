@@ -1,141 +1,93 @@
 <%- include('partials/header') %>
-    <div class="text-center pagetitle" style="font-family: 'Montserrat', sans-serif;">
-        <h3>My Projects</h3>
-    </div>
-    <div class="container mt-5 ">
 
-        <div class="row">
-            <div class="col">
-                <div class="card" style="width: 25rem; height: 30rem;">
-                    <div class="card-img-top">
-                        <div id="myGalleryCarousel" class="carousel slide carousel-fade h-100">
-                            <div class="carousel-inner h-100">
-                                <div class="carousel-item active h-100">
-                                    <img src="/images/Blog_page.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/Blog_page2.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/Blog_login.png" class="d-block w-100" alt="Blog page">
-                                </div>
+<div class="text-center pagetitle" style="font-family: 'Montserrat', sans-serif;">
+    <h3>My Projects</h3>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col mb-4">
+            <div class="card" style="width: 25rem; height: 30rem;">
+                <div class="card-img-top">
+                    <!-- ✅ Unique carousel ID -->
+                    <div id="blogCarousel1" class="carousel slide carousel-fade h-100">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                                <img src="/images/Blog_page.png" class="d-block w-100" alt="Blog page">
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myGalleryCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myGalleryCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                            <div class="carousel-item">
+                                <img src="/images/Blog_page2.png" class="d-block w-100" alt="Blog page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/Blog_login.png" class="d-block w-100" alt="Blog page">
+                            </div>
                         </div>
-                    </div>
 
-
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Blog App</h5>
-                        <p class="card-text mb-5" style="font-size: smaller;">
-                            A full-stack blog app with secure login, dynamic posts, and responsive design using Node.js,
-                            Express, and EJS.
-                        </p>
-
-
-                        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7331738159342391297/"><button
-                                class="viewBtn">View
-                                project</button></a>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-            </div>
-            <!-- <div class="col">
-                <div class="card" style="width: 25rem; height: 30rem;">
-                    <div class="card-img-top">
-                        <div id="myGalleryCarousel" class="carousel slide carousel-fade h-100">
-                            <div class="carousel-inner h-100">
-                                <div class="carousel-item active h-100">
-                                    <img src="/images/Blog_page.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/Blog_page2.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/Blog_login.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myGalleryCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myGalleryCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
 
+                <div class="card-body">
+                    <h5 class="card-title text-center">Blog App</h5>
+                    <p class="card-text mb-5" style="font-size: smaller;">
+                        A full-stack blog app with secure login, dynamic posts, and responsive design using Node.js,
+                        Express, and EJS.
+                    </p>
 
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Blog App</h5>
-                        <p class="card-text" style="font-size: smaller;">
-                            A full-stack blog app with secure login, dynamic posts, and responsive design using Node.js,
-                            Express, and EJS.
-                        </p>
-
-
-                        <a href="https://github.com/PRITIKA-GIRI/Blog-web-application"><button class="viewBtn">View
-                                project</button></a>
-                    </div>
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7331738159342391297/">
+                        <button class="viewBtn">View project</button>
+                    </a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 25rem; height: 30rem;">
-                    <div class="card-img-top">
-                        <div id="myGalleryCarousel" class="carousel slide carousel-fade h-100">
-                            <div class="carousel-inner h-100">
-                                <div class="carousel-item active h-100">
-                                    <img src="/images/Blog_page.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/Blog_page2.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="/images/Blog_login.png" class="d-block w-100" alt="Blog page">
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myGalleryCarousel"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myGalleryCarousel"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-
-
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Blog App</h5>
-                        <p class="card-text" style="font-size: smaller;">
-                            A full-stack blog app with secure login, dynamic posts, and responsive design using Node.js,
-                            Express, and EJS.
-                        </p>
-
-
-                        <a href="https://github.com/PRITIKA-GIRI/Blog-web-application"><button class="viewBtn">View
-                                project</button></a>
-                    </div>
-                </div>
-            </div>
-
-        </div> -->
-
         </div>
 
+        <% /* 
+        <div class="col">
+            <div class="card" style="width: 25rem; height: 30rem;">
+                <div class="card-img-top">
+                    <div id="blogCarousel2" class="carousel slide carousel-fade h-100">
+                        <div class="carousel-inner h-100">
+                            <div class="carousel-item active h-100">
+                                <img src="/images/Blog_page.png" class="d-block w-100" alt="Blog page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/Blog_page2.png" class="d-block w-100" alt="Blog page">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/images/Blog_login.png" class="d-block w-100" alt="Blog page">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Blog App</h5>
+                    <p class="card-text" style="font-size: smaller;">
+                        A full-stack blog app with secure login, dynamic posts, and responsive design using Node.js,
+                        Express, and EJS.
+                    </p>
+                    <a href="https://github.com/PRITIKA-GIRI/Blog-web-application">
+                        <button class="viewBtn">View project</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        */ %>
     </div>
-    <%- include('partials/footer') %>
+</div>
+
+<%- include('partials/footer') %>
