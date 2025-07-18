@@ -26,11 +26,35 @@ app.get("/", (req, res) => {
   });
 });
 app.get("/projects", (req, res) => {
-  res.render("projects.ejs", { 
+  const projects = [
+    {
+      title: 'Blog App',
+      description: 'A full-stack blog app with secure login, dynamic posts, and responsive design using Node.js, Express, and EJS.',
+      link: 'https://www.linkedin.com/feed/update/urn:li:activity:7331738159342391297/',
+      images: [
+        '/images/Blog_page.png',
+        '/images/Blog_page2.png',
+        '/images/Blog_login.png'
+      ]
+    },
+    {
+      title: 'Bookstore App',
+      description: 'An e-commerce bookstore with secure checkout, cart, and admin dashboard built using PostgreSQL, Node.js, and EJS.',
+      link: 'https://github.com/PRITIKA-GIRI/MindBloom-Ecom',
+      images: [
+        '/images/Bookstore2.png'
+      ]
+    },
+    // Add more projects here
+  ];
+
+  res.render("projects", { 
     title: "Pritika Giri",
-    activePage: "projects" 
+    activePage: "projects",
+    projects  // pass the array to the view
   });
 });
+
 app.get("/about", (req, res) => {
   res.render("about.ejs", { 
     title: "Pritika Giri",
